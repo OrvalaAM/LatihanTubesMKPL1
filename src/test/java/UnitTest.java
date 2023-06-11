@@ -3,6 +3,7 @@ package test;
 import org.junit.Test;
 import MainProgram.DBconn;
 import Model.Turnamen;
+import Model.Tim;
 import java.sql.*;
 import static org.junit.Assert.*;
 
@@ -26,6 +27,11 @@ public class UnitTest {
     public void testPesertaTurnamen(){
         Turnamen turnamenTest = new Turnamen("Nama", "peserta");
         assertEquals("peserta", turnamenTest.getPeserta());
+    }
+    @Test
+    public void testNamaTim(){
+        Tim timTest = new Tim("Nama", "profil", 10);
+        assertEquals("peserta", timTest.getNamaTim());
     }
     
 }
