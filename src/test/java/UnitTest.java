@@ -28,4 +28,10 @@ public class UnitTest {
         assertEquals("peserta", turnamenTest.getPeserta());
     }
     
+    @Test
+    public void testNamaTim(){
+        Tim timTest = new Tim("Nama", "profil", 10);
+        assertEquals("peserta", timTest.getNamaTim());
+    }
+    
 }
